@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Este e o arquivo de instalação
 
 import os
 import time

@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+import os
+import time
+
+#criando ficheiros
+print "Criando ficheiros..."
+os.system("sudo mkdir -p /opt/ficher/")
+os.system("sudo cp -pr * /opt/ficher/")
+os.system("sudo chmod +x /opt/ficher/")
+time.sleep(1)
+
+#criando banco de dados
+print "Criando Banco de Dados..."
+os.system("sudo apt-get -y install mysql-server-5.1")
+time.sleep(1)
+
+#Instalando bibliotecas
+print "instalado bibliotecas..."
+os.system("sudo apt-get install python-mysqldb-dbg python-excelerator")
+time.sleep(1)
+
+#Gerando Aplicativo
+print "Gerando aplicativo..."
+os.system("sudo cp -p ficher funcoes.py tabelas.py /usr/bin/")
+time.sleep(1)
+
+#fim da instalacao
+print "Instalacao completa!"

@@ -4,6 +4,10 @@
 import os
 import time
 
+#Cabeçario 
+print "Ficher 1.0 \n\n\n"
+
+
 #criando ficheiros
 print "Criando ficheiros..."
 os.system("sudo mkdir -p /opt/ficher/")

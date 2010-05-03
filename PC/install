@@ -1,34 +1,34 @@
 #!/usr/bin/python
-#Este e o arquivo de instalação
+#This is ficher instalation
 
 import os
 import time
 
-#Cabeçario 
+#Header
 print "Ficher 1.0 \n\n\n"
 
 
-#criando ficheiros
+#Creating Directories
 print "Criando ficheiros..."
 os.system("sudo mkdir -p /opt/ficher/")
 os.system("sudo cp -pr * /opt/ficher/")
 os.system("sudo chmod +x /opt/ficher/")
 time.sleep(1)
 
-#criando banco de dados
+#Creating data-base
 print "Criando Banco de Dados..."
 os.system("sudo apt-get -y install mysql-server-5.1")
 time.sleep(1)
 
-#Instalando bibliotecas
+#Installing libriries
 print "instalado bibliotecas..."
 os.system("sudo apt-get install python-mysqldb-dbg python-excelerator")
 time.sleep(1)
 
-#Gerando Aplicativo
+#Generating data-base
 print "Gerando aplicativo..."
 os.system("sudo cp -p ficher funcoes.py tabelas.py /usr/bin/")
 time.sleep(1)
 
-#fim da instalacao
+#end
 print "Instalacao completa!"
